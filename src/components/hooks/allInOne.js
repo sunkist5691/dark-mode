@@ -34,3 +34,13 @@ const [darkMode, setDarkMode] = useDarkMode('dark', false)
 // it sets key 'dark' to value 'true or false'
 // and it invokes 'setStoredValue' with the 'value' that setted
 // and that value become 'storeValue'
+
+// Step Five
+// When we refresh the page, the initialValue will be still 'false' with key 'dark'.
+// but, the 'getItem' will get the saved 'value' of the key 'dark' which is 'true'
+// so 'item' becomes 'true' which 'JSON.parse(item)' invoked and that becomes 'storedValue' which is 'true'
+// this is why we can kept the darkMode or lightMode even when we refresh the page. 
+// So this makes customers or users not to lose their preference even when they are coming back to our website later
+// without having change of their preference.
+
+// so localStorage is AMAZING! It's convenient and smart to use it.

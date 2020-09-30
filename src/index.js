@@ -10,9 +10,10 @@ import "./styles.scss";
 
 const App = () => {
   const [coinData, setCoinData] = useState([]);
-  // const [darkMode, setDarkMode] = useState(false);
-  
-  const [darkMode, setDarkMode] = useDarkMode('dark', false) // the useDarkMode, actually doesn't do anything.
+
+  const [darkMode, setDarkMode] = useState(false);
+
+  // const [darkMode, setDarkMode] = useDarkMode('dark', false) // the useDarkMode, actually doesn't do anything.
   // you can also do: 
   // const [darkMode, setDarkMode] = useLocalStorage('dark', false)
 

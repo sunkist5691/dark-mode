@@ -9,7 +9,9 @@ const useLocalStorage = (key, initialValue) => {
       return item ? JSON.parse(item) : initialValue 
       // return storeValue as false as initial state
       // if item is 'null', it returns initialValue otherwise, return value with JSON.parse(item)
+      // Remember! this is ONLY initial state.
    })
+   
    const setValue = value => {
       window.localStorage.setItem(key, JSON.stringify(value))
       setStoredValue(value)
